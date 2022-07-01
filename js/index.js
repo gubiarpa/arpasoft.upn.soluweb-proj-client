@@ -1,3 +1,6 @@
 window.onload = async () => {
-    await buildProducts('#servicios-container');
+    await Promise.all([
+        buildProducts('#servicios-container'),
+        buildInicio()
+    ]);
 }
