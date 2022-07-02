@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="icons/vintagereadingglassesicon_114510.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos-input.css">
 </head>
 
 <body>
@@ -35,15 +36,15 @@
             <form>
                 <div class="control-form">
                     <label for="txtNombre">Nombre completo</label><br />
-                    <input type="text" name="Nombre" id="txtNombre">
+                    <input id="txtNombre" type="text" spellcheck="false" required>
                 </div>
                 <div class="control-form">
                     <label for="txtTelefono">Teléfono</label><br />
-                    <input type="tel" name="Telefono" id="txtTelefono">
+                    <input type="tel" name="Telefono" spellcheck="false" id="txtTelefono">
                 </div>
                 <div class="control-form">
                     <label for="txtMensaje">Mensaje</label><br />
-                    <textarea id="txtMensaje" placeholder="Escribe aquí tu mensaje"></textarea>
+                    <textarea id="txtMensaje" spellcheck="true"></textarea>
                 </div>
             </form>
         </section>

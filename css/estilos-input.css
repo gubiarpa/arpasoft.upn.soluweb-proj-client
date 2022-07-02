@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* form {
+    height: 55px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* form input:valid~i {
+    color: #58cff1;
+} */
+
+input, textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #db6b6b6b;
+    transition: all 0.5s ease;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #e93c3c9a;
+    transition: all 0.5s ease;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* form input:focus,
+form input:valid {
+    border-color: #58cff1;
+} */
+
+/* form input::placeholder {
+    color: #c4c4c4;
+} */
+
+/* form .counter {
+    position: absolute;
+    right: 3px;
+    width: 55px;
+    font-size: 20px;
+    color: #c4c4c4;
+    text-align: center;
+    border-left: 1px solid #d8d8d8;
+    pointer-events: none;
+} */
+
+/* form input:valid~.counter {
+    color: #58cff1;
+    border-color: #58cff1;
+} */
