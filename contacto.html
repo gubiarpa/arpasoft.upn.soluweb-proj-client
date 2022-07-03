@@ -47,7 +47,10 @@
                     <textarea id="txtMensaje" spellcheck="true"></textarea>
                 </div>
                 <div class="control-form">
-                    <button>Enviar</button>
+                    <button class="g-recaptcha" data-sitekey="6Le-DrsgAAAAAFm0vlahrJBIl7GGeckE-a0ScTpI"
+                        data-callback='onSubmit' data-action='submit'>
+                        Enviar
+                    </button>
                 </div>
             </form>
         </section>
@@ -69,7 +72,13 @@
         </div>
         <h2 class="titulo-final">&copy; Arpasoft Systems | 2022</h2>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 </body>
 
 </html>
