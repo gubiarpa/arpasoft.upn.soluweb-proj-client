@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos-input.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le-DrsgAAAAAFm0vlahrJBIl7GGeckE-a0ScTpI"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     </header>
     <main>
         <section class="contenedor sobre-nosotros">
-            <form>
+            <form id="contactform">
                 <div class="control-form">
                     <label for="txtNombre">Nombre completo</label><br />
                     <input id="txtNombre" type="text" spellcheck="false" required>
@@ -72,11 +73,22 @@
         </div>
         <h2 class="titulo-final">&copy; Arpasoft Systems | 2022</h2>
     </footer>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="js/index.js"></script>
+    <!-- Base scripts-->
+    <script src="js/services/url-base.js"></script>
+
+    <!-- Inicio scripts -->
+    <script src="js/services/inicio.service.js"></script>
+    <script src="js/components/inicio.component.js"></script>
+
+    <!-- Page scripts -->
     <script>
         function onSubmit(token) {
-            document.getElementById("demo-form").submit();
+            console.log('gubiarpa');
+            document.getElementById("contactform").submit();
+        }
+
+        window.onload = () => {
+            buildInicio()
         }
     </script>
 </body>
