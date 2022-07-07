@@ -2,7 +2,7 @@
 const getEndpoint = async (endpoint) => {
 
     const getUrlBase = () => {
-        return 'http://localhost:2907';
+        return 'https://opticas-dyc.herokuapp.com';
     }
 
     try {
