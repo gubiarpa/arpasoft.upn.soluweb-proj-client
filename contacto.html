@@ -39,7 +39,7 @@
     </header>
     <main>
         <section class="contenedor sobre-nosotros">
-            <form id="contactform">
+            <form id="contactForm">
                 <div class="control-form">
                     <label for="txtNombre">Nombre completo</label><br />
                     <input id="txtNombre" type="text" spellcheck="false" required>
@@ -88,12 +88,8 @@
     <!-- Scripts -->
     <script src="js/services/base/service.base.js"></script>
     <script src="js/services/shared.service.js"></script>
+    <script src="js/services/contacto.service.js"></script>
     <script>
-        function onSubmit(token) {
-            console.log('gubiarpa');
-            document.getElementById("contactform").submit();
-        }
-
         window.onload = () => {
             Promise.all([
                 loadShared(),
