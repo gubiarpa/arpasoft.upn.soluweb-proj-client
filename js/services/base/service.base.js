@@ -1,7 +1,7 @@
 /* *** Services *** */
 const getUrlBase = () => {
-    // return 'https://opticas-dyc.herokuapp.com';
-    return 'http://localhost:2907';
+    return 'https://opticas-dyc.herokuapp.com';
+    // return 'http://localhost:2907';
 }
 
 const getEndpoint = async (endpoint) => {
