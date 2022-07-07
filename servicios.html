@@ -23,12 +23,15 @@
             <h1 id="_slogan">
                 <!-- API Content -->
             </h1>
-            <h2>Ven a Ópticas D & C</h2>
+            <h2 id="_welcome">
+                <!-- API Content -->
+            </h2>
         </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
+                    style="stroke: none; fill: #fff;">
+                </path>
             </svg>
         </div>
     </header>
@@ -60,26 +63,41 @@
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Phone</h4>
-                <p>456-7890</p>
+                <p id="_phone">
+                    <!-- API Content -->
+                </p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
-                <p>ventas@opticasdyc.com.pe</p>
+                <p id="_email">
+                    <!-- API Content -->
+                </p>
             </div>
             <div class="content-foo">
                 <h4>Ubicanos</h4>
-                <p>Av. Las Violetas 680 - Independencia</p>
+                <p id="_location">
+                    <!-- API Content -->
+                </p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Arpasoft Systems | 2022</h2>
     </footer>
+
     <!-- Scripts -->
-    <script src="js/services/url-base.js"></script>
-    <script src="js/services/product.service.js"></script>
-    <script src="js/components/product.component.js"></script>
-    <script src="js/services/inicio.service.js"></script>
-    <script src="js/components/inicio.component.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/services/base/service.base.js"></script>
+    <script src="js/services/shared.service.js"></script>
+    <script>
+        function onSubmit(token) {
+            console.log('gubiarpa');
+            document.getElementById("contactform").submit();
+        }
+
+        window.onload = () => {
+            Promise.all([
+                loadShared(),
+            ]);
+        }
+    </script>
 </body>
 
 </html>

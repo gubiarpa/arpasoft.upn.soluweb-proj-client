@@ -23,7 +23,9 @@
             <h1 id="_slogan">
                 <!-- API Content -->
             </h1>
-            <h2 id="_welcome">Ven a Ópticas D & C</h2>
+            <h2 id="_welcome">
+                <!-- API Content -->
+            </h2>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -102,8 +104,8 @@
     <script>
         window.onload = () => {
             Promise.all([
-                loadProducts(),
                 loadShared(),
+                loadProducts(),
                 loadTestimonies(),
             ]);
         }
