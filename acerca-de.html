@@ -38,62 +38,78 @@
     <main>
         <section class="portafolio">
             <div class="contenedor">
-                <h2 class="titulo">Portafolio</h2>
+                <h2 class="titulo">Nuestros Precios</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
                         <img src="img/img1.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price1" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img2.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price2" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img3.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price3" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img1.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price4" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img4.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price5" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img5.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price6" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img6.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price7" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img7.jpg" alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <p id="_price8" class="price">
+                                <!-- API Content -->
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -127,6 +143,7 @@
     <!-- Scripts -->
     <script src="js/services/base/service.base.js"></script>
     <script src="js/services/shared.service.js"></script>
+    <script src="js/services/acerca-de.service.js"></script>
     <script>
         function onSubmit(token) {
             console.log('gubiarpa');
@@ -136,6 +153,7 @@
         window.onload = () => {
             Promise.all([
                 loadShared(),
+                loadPrices()
             ]);
         }
     </script>
