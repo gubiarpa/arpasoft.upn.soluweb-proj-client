@@ -42,18 +42,30 @@
                 <div class="servicio-cont">
                     <div class="servicio-ind">
                         <img src="img/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                        <h3 id="_service1">
+                            <!-- API Content -->
+                        </h3>
+                        <p id="_description1">
+                            <!-- API Content -->
+                        </p>
                     </div>
                     <div class="servicio-ind">
                         <img src="img/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                        <h3 id="_service2">
+                            <!-- API Content -->
+                        </h3>
+                        <p id="_description2">
+                            <!-- API Content -->
+                        </p>
                     </div>
                     <div class="servicio-ind">
                         <img src="img/ilustracion3.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                        <h3 id="_service3">
+                            <!-- API Content -->
+                        </h3>
+                        <p id="_description3">
+                            <!-- API Content -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -86,15 +98,12 @@
     <!-- Scripts -->
     <script src="js/services/base/service.base.js"></script>
     <script src="js/services/shared.service.js"></script>
+    <script src="js/services/sevicios.service.js"></script>
     <script>
-        function onSubmit(token) {
-            console.log('gubiarpa');
-            document.getElementById("contactform").submit();
-        }
-
         window.onload = () => {
             Promise.all([
                 loadShared(),
+                loadServices(),
             ]);
         }
     </script>
