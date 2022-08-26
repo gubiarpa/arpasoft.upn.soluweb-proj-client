@@ -1,6 +1,6 @@
 /* *** Services *** */
 const getUrlBase = () => {
-    return 'https://opticas-dyc.herokuapp.com';
+    return 'https://opticas-dyc.onrender.com';
     // return 'http://localhost:2907';
 }
 
